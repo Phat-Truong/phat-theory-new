@@ -1,0 +1,803 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+a[href^="#"] {
+    transition: all 0.5s ease-in-out;
+}
+
+body {
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    background-color: #0C051B;
+    font-size: 16px;
+    z-index: -111;
+}
+
+main {
+    position: relative;
+    width: 1450px;
+    height: 5800px;
+    margin-left: auto;
+    margin-right: auto;
+    background: linear-gradient(180deg, #2F1246 0%, #4B238D 25%, #0C051B 100%);
+    z-index: -111;
+}
+
+.ribbon {
+    z-index: 1;
+    position: absolute;
+    width: 1450px;
+    height: 3375px;
+    top: 471px;
+    overflow: hidden;
+
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    width: 953px;
+    height: 72px;
+    z-index: 100;
+}
+
+.nav-closed {
+    display: flex;
+    gap: 55px;
+    justify-content: center;
+    margin-right: -34px;
+    transition: transform 0.05s ease-in-out;
+    padding-top: 21px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 19px;
+}
+
+.nav-closed a:hover {
+    color: cyan;
+    transform: translateY(-2.4px);
+}
+
+.header {
+    border-bottom: 1px solid var(--gray);
+    position: absolute;
+    width: 953px;
+    height: 72px;
+    left: 239px;
+    top: 96px;
+}
+
+.nav-toggle {
+    display: none;
+  }
+  
+
+a.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    color: white;
+    font-family: 'Inter';
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-side-links {
+    display: flex;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.nav-side-links button {
+    background-color: #007EF2;
+    border-radius: 10px;
+    border: 0px;
+    width: 119px;
+    height: 44px;
+}
+
+.menu-button {
+    display: none;
+}
+
+.nav-side-links button:hover{
+    transform: translateY(-2.4px);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.nav-side-links a {
+    color: var(--dark-300);
+    font-size: 25.6px;
+    font-weight: 700;
+}
+
+
+.banner {
+    position: absolute;
+    width: 941px;
+    height: 484px;
+    left: 244px;
+    top: 279px;
+    z-index:50;
+}
+
+.under-banner {
+    position: absolute;
+    width: 1151px;
+    height: 263px;
+    left: 161px;
+    top: 842px;
+}
+
+.under-banner h3 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 45px;
+    line-height: 54px;
+    text-align: center;
+    color: #CAE6FF;
+    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.35);
+    position: relative;
+    margin: 0px;
+    z-index: 999;
+}
+
+.under-banner p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFC46A;
+    margin-top: 29px;
+
+}
+
+.under-banner h6{
+    color: #CAE6FF;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 29px;
+}
+
+.check-button {
+    display: flex;
+    justify-content: center;
+    height: 58px;
+    margin-top: 32px;
+    margin-left: -17px;
+}
+
+.group-button1 {
+    margin-right: 35px;
+}
+
+.group-button2 {
+    margin-left: 35px;
+}
+
+.group-button1,
+.group-button2 {
+    width: 163px;
+    height: 58px;
+    border: none;
+    border-radius: 10px;
+    background-image: linear-gradient(#FF3DB1, #FE2070);
+    color: rgb(0, 0, 0);
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 100;
+}
+
+.group-button1:hover{
+    transform: translateY(-2.4px);
+}
+
+.group-button2:hover{
+    transform: translateY(-2.4px);
+    
+}
+
+.gap1 {
+    position: absolute;
+    width: 1454px;
+    height: 726px;
+    left: -1px;
+    top: 1086px;
+    z-index: 111;
+
+}
+
+.gap1 h2 {
+    display: inline-block;
+    position: absolute;
+    width: 962px;
+    height: 99px;
+    left: 244px;
+    margin-top: 124px;
+    z-index: 999;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 82px;
+    line-height: 99px;
+    color: #7DC1FF;
+    margin-bottom: 0px;
+    text-align: center;
+
+
+}
+
+.gap1 p {
+    position: absolute;
+    width: 884px;
+    height: 78px;
+    left: 284px;
+    margin-top: -186px;
+    z-index: 999;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #DCDCDC;
+
+}
+
+.Stories {
+    position: absolute;
+    width: 930px;
+    height: 702px;
+    left: 261px;
+    top: 1925px;
+    z-index: 100;
+
+}
+
+.Stories h3 {
+    width: 350px;
+    height: 39px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0 auto;
+    color: #D9D9D9;
+}
+
+.Grid-stories {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "fb   Ut   Tw"
+        "t-Fb   t-Ut   t-Tw"
+        "In   Fi    Ad"
+        "t-In   t-Fi    t-Ad";
+    width: 930px;
+    height: 632px;
+    align-items: center;
+    justify-items: center;
+    margin-top: 31px;
+    z-index: 100;
+}
+
+.Fb {
+    grid-area: fb;
+    width: 242px;
+}
+
+.Ut {
+    grid-area: Ut;
+    width: 242px;
+}
+
+.Tw {
+    grid-area: Tw;
+    width: 242px;
+}
+
+.In {
+    grid-area: In;
+    width: 242px;
+}
+
+.Fi {
+    grid-area: Fi;
+    width: 242px;
+}
+
+.Ad {
+    grid-area: Ad;
+    width: 242px;
+}
+
+.t-Fb {
+    grid-area: t-Fb;
+
+}
+
+.t-Ut {
+    grid-area: t-Ut;
+}
+
+.t-Tw {
+    grid-area: t-Tw;
+}
+
+.t-In {
+    grid-area: t-In;
+}
+
+.t-Fi {
+    grid-area: t-Fi;
+}
+
+.t-Ad {
+    grid-area: t-Ad;
+}
+
+.t-Fb,
+.t-Ut,
+.t-Tw,
+.t-In,
+.t-Fi,
+.t-Ad {
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 30px;
+    color: #CAE6FF;
+    margin-top: -23px;
+}
+
+.Discovery-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    width: 933px;
+    height: 480px;
+    position: absolute;
+    width: 933px;
+    height: 480px;
+    left: 261px;
+    top: 2754px;
+    z-index: 100;
+}
+
+.grid-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "E  P   C"
+        "A   H   Be"
+        "F J R";
+    width: 470px;
+    height: 479px;
+    margin-right: 19px;
+    gap: 15px;  
+}
+
+#left {
+    transition: transform 0.8s ease-in-out;
+}
+#left:hover {
+    scale: 120%;
+    
+}
+.El {
+    grid-area: E;
+}
+
+.Po {
+    grid-area: P;
+}
+
+.Co {
+    grid-area: C;
+}
+
+.Ac {
+    grid-area: A;
+}
+
+.Hh {
+    grid-area: H;
+}
+
+.Be {
+    grid-area: Be;
+}
+
+.Fu {
+    grid-area: F;
+}
+
+.Ja {
+    grid-area: J;
+}
+
+.Ro {
+    grid-area: R;
+}
+
+.grid-right {
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 443px;
+    height: 480px;
+    text-align: right;
+}
+
+.grid-right p {
+    display: grid;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 0px;
+}
+
+.grid-right h3 {
+    display: grid;
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-top: 93px;
+}
+
+.grid-right h2 {
+    display: grid;
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    text-align: right;
+    margin-top: 79px;
+    color: #FF3DB1;
+
+}
+
+.grid-right h4 {
+    display: grid;
+    margin-left: auto;
+    margin-right: 0px;
+    margin-top: -12px;
+    margin-bottom: 6px;
+    width: 322px;
+    height: 36px;
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: center;
+    color: #007EF2;
+    text-shadow: 5px 4px 4px rgba(0, 0, 0, 0.35);
+
+
+}
+
+
+
+.arrow {
+    margin-left: -270px;
+    margin-right: auto;
+    position: absolute;
+    left: 1033px;
+    z-index: 999;
+}
+
+.gap2 {
+    position: absolute;
+    width: 1454px;
+    height: 400px;
+    left: -2px;
+    top: 3363px;
+    z-index: 100;
+}
+
+.gap2 p {
+    position: absolute;
+    width: 1182px;
+    height: 186px;
+    margin-top: -269px;
+    left: 141px;
+    text-align: center;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 154.52%;
+    /* or 62px */
+    text-align: center;
+    color: #FFFFFF;
+
+}
+
+.Price-Grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "P C E";
+    position: relative;
+    width: 1170px;
+    height: 676px;
+    left: 140px;
+    top: 3895px;
+    gap: 35px;
+}
+
+.Price-Grid h3 {
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 46px;
+    color: #000000;
+}
+
+.Price-Grid p {
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 116.4%;
+    /* or 26px */
+    color: #007EF2;
+}
+
+.Price-Grid h2 {
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+}
+
+.Price-Grid li {
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.Personal {
+    position: relative;
+    display: inline-block;
+    grid-area: P;
+    width: 366px;
+    height: 676px;
+    background-image: url('img/Price/Pricing.png');
+    border-radius: 15px;
+}
+
+.Personal li{
+    margin-bottom: 80px;
+}
+
+.Personal img {
+    z-index: 111;
+}
+
+.Commercial {
+    position: relative;
+    grid-area: C;
+    width: 366px;
+    height: 676px;
+    background-image: url('img/Price/Pricing.png');
+    border-radius: 15px;
+}
+
+.Commercial li{
+    margin-bottom: 46px;
+}
+
+.Enterprise {
+    position: relative;
+    grid-area: E;
+    width: 366px;
+    height: 676px;
+    background-image: url('img/Price/Pricing.png');
+    border-radius: 15px;
+}
+
+.Enterprise h2{
+    margin-bottom: 26px;
+}
+
+.Enterprise p{
+    margin-bottom: 74px;
+}
+
+.Enterprise li{
+    margin-bottom: 46px;
+}
+
+.P-content {
+    width: 298px;
+    height: 606px;
+    margin-left: 47px;
+    z-index: 999;
+}
+
+
+.Com-content {
+    width: 298px;
+    height: 606px;
+    margin-left: 47px;
+}
+
+.Ent-content {
+    width: 298px;
+    height: 606px;
+    margin-left: 47px;
+}
+
+.Price-Grid button {
+    justify-content: center;
+    justify-items: center;
+    position: absolute;
+    bottom: 7px;
+    left: 74px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    background-color: #38A0FF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 15px;
+    width: 216px;
+    height: 58px;
+    margin-bottom: 39px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 2px 5px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.Price-Grid button:hover{
+    transform: translateY(-8px);
+}
+
+.License h2 {
+    position: absolute;
+    width: 840px;
+    height: 51px;
+    left: 234px;
+    top: 4666px;
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 51px;
+    /* identical to box height */
+    text-align: right;
+    color: #38A0FF;
+    text-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.License h4 {
+    position: absolute;
+    width: 244px;
+    height: 30px;
+    left: 603px;
+    top: 4727px;
+    padding-bottom: 10px;
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 30px;
+    text-align: right;
+    color: #FF3DB1;
+    text-shadow: 5px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.License p {
+    position: absolute;
+    width: 1030px;
+    height: 44px;
+    left: 210px;
+    top: 4790px;
+    margin-top: 30px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.License img {
+    position: absolute;
+    width: 819px;
+    height: 425px;
+    left: 315px;
+    top: 4900px;
+    box-shadow: 5px 10px 10px 5px rgba(0, 0, 0, 0.25);
+    border-radius: 20px;
+}
+
+.License h3 {
+    position: absolute;
+    width: 786px;
+    height: 74px;
+    left: 331px;
+    top: 5391px;
+    font-family: 'HP Simplified';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.footer {
+    position: absolute;
+    width: 1453px;
+    left: 0px;
+    top: 5507px;
+    margin: 0px;
+}
+
+.foot-icon {
+    position: absolute;
+    width: 373px;
+    height: 29px;
+    left: 537px;
+    bottom: 80px;
+
+}
+
+.footer p {
+    position: absolute;
+    width: 180px;
+    height: 22px;
+    left: 634px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #DCDCDC;
+    bottom: 20px;
+}
+
